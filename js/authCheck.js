@@ -46,7 +46,7 @@ function logout() {
             .then(() => {
                 console.log("User logged out successfully");
                 // Redirect or perform other actions after logout
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             })
             .catch((error) => {
                 console.error("Logout error", error.message);
