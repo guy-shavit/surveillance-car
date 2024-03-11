@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <link rel="stylesheet" href="/css/stylesMain.css">
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+<body>
+    <header>
+        <h1>User Manual</h1>
+        <button id="openNav">&#9776; Menu</button>
+   </header>
+    <nav id="sideNav">
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="User Manual.html">User Manual</a>
+        <button id="closeNav">&times; Close</button>
+    </nav>
+    <div class="main-content">
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="enlargedImg">
+          </div>
+        <div class="center-container">
+            <div id="mecanumExplanation">
+                <h2>Mecanum Wheel Operation</h2>
+                <p>The mecanum wheel is a type of omnidirectional wheel that allows the Arduino car to move in any direction with ease. It achieves this using a unique arrangement of rollers at a 45-degree angle to the axis of rotation.</p>
+                <p>When the wheels rotate at different speeds and directions, the car can achieve complex movements, including lateral and diagonal motions. This provides exceptional maneuverability, making the Arduino car highly versatile in navigating various environments.</p>
+            </div>
+            <table>
+                <tr>
+                    <td><img src="/images/topLeft.png"></td>
+                    <td><img src="/images/forward.png"></td>
+                    <td><img src="/images/topRight.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/leftDrift.png"></td>
+                    <td><img src="/images/clockwise.png"></td>
+                    <td><img src="/images/rightDrift.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/lowLeft.png"></td>
+                    <td><img src="/images/back.png"></td>
+                    <td><img src="/images/lowerRight.png"></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>    
+
+    <footer>
+        <p>&copy; 2024 Surveillance Car Project</p>
+    </footer>
+    <script type="module" src="/js/firebase.js"></script>
+    <script type="module" src="/js/authCheck.js"></script>    
+    <script type="module" src="/js/table.js"></script>
+    <script src="/js/navigation.js"></script>
+</body>
+</html>

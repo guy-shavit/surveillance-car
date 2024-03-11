@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a514e;
+}
+
+header {
+    background-color: #23e27c;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1ed498;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#cameraStream {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#cameraFeed {
+    width: 100%;
+    max-width: 640px; /* Set a maximum width for the iframe */
+    height: 480px; /* Set a fixed height for the iframe */
+    border: 20px solid #4245ee;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto; /* Center the iframe horizontally */
+
+    /* Center the iframe content using flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cameraFeed iframe {
+    width: 100%;
+    height: 100%;
+}
+#projectDescription, #contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2e9bf4;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#sideNav a {
+    padding: 15px 15px 15px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#sideNav a:hover {
+    background-color: #1cf619;
+}
+
+#sideNav button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+#controls {
+    display: flex;
+}
+
+#controlsContainer {
+    flex-grow: 1; /* Grow to fill available space */
+}
+
+ button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    /* Center the button */
+    margin: auto;
+}
+
+
+#centeredBtn {
+    display: block;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #037bbc;
+}
+
+
+#mecanumExplanation {
+    background-color: #22aedd;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+  }
+  
+  #mecanumExplanation h2 {
+    color: #111513;
+  }
+  
+  #mecanumExplanation p {
+    margin-bottom: 15px;
+  }
+  
+
+  .infoBox {
+    background-color: #6465be;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+  }
+  
+  .infoBox h2 {
+    color: #23e27c;
+  }
+  
+  .infoBox p {
+    margin-bottom: 15px;
+  }

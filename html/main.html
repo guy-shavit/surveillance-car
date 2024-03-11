@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Car Control</title>
+    <link rel="stylesheet" href="/css/stylesMain.css">
+</head>
+<body>
+    <header>
+        <h1>Surveillance Car</h1>
+        <button id="openNav">&#9776; Menu</button>
+        <button onclick="logout()">Logout</button>
+        <button id="redirectToIpButton">Control The Car</button>
+
+    </header>
+    <nav id="sideNav">
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="User Manual.html">User Manual</a>
+        <ul id="loggedInUsersList"></ul>
+        <button id="closeNav">&times; Close</button>
+    </nav>
+    
+    <main>
+        <section id="cameraStream">
+            <h2>Live Camera Stream</h2>
+            <iframe id="camStream" width="400" height="296" src=""></iframe>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Surveillance Car Project</p>
+    </footer>
+
+    <script type="module" src="/js/firebase.js"></script>
+    <script type="module" src="/js/authCheck.js"></script>
+    <script type="module" src="/js/cameraView.js"></script>
+    <script src="/js/navigation.js"></script>
+</body>
+</html>
