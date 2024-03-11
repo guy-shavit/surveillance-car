@@ -1,4 +1,3 @@
-// login.js
 import { app, db } from "/js/firebase.js";
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { set, ref } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
@@ -25,7 +24,7 @@ function login() {
                         window.location.href = 'main.html';
                     } else {
                         // Handle the case where the user is not authenticated
-                        window.location.href = 'login.html';
+                        window.location.href = 'index.html';
                     }
                 });
             })

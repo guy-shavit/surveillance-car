@@ -16,7 +16,7 @@ function signup() {
                 email: email, // Store the email in the database
             });
             console.log("Signup successful", userCredential);
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         })
         .catch((error) => {
             // Handle signup error
