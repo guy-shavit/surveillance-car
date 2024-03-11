@@ -30,7 +30,7 @@ function displayLoggedInUsers() {
             });
         } else {
             // User is not signed in, redirect to login page
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         }
     });
 }
