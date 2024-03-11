@@ -25,7 +25,7 @@ function displayLoggedInUsers() {
                     loggedInUsersList.appendChild(listItem);
                 } else {
                     // Redirect to login page or perform some action for unauthenticated users
-                    window.location.href = 'login.html';
+                    window.location.href = 'index.html';
                 }
             });
         } else {
